@@ -2781,7 +2781,7 @@ section.our-facts h2 {
 
 .count-area-content {
   text-align: center;
-  background-color: #2bcdc0;
+  /* background-color: #2bcdc0; */
   border-radius: 20px;
   padding: 25px 30px 35px 30px;
   margin: 15px 0px;
