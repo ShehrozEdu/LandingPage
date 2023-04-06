@@ -32,41 +32,82 @@
   <body>
     <!-- ***** Main Banner Area Start ***** -->
     <!-- ***** Navbar Start ***** -->
-    <section class="navbar">
-      <div class="logo">
-        <img src="./assets/images/logo.svg" alt="" />
-      </div>
-      <div class="resumeAndLogin" id="resumeAndLogin">
-        <p onclick="handleShowUploadPopUp()">Check my resume</p>
-        <h3>Login</h3>
-      </div>
 
-      <div class="menuBtn">
-        <button onclick="handleShowMenu()">
-          <svg
-            width="32"
-            height="32"
-            viewBox="0 0 32 32"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <rect x="6" y="11.5" width="20" height="1.5" fill="#FAFAFA"></rect>
-            <path
-              d="M7 12.5H25"
-              stroke="#1C1D1F"
-              stroke-width="2.5"
-              stroke-linecap="round"
-            ></path>
-            <path
-              d="M7 19.5H25"
-              stroke="#1C1D1F"
-              stroke-width="2.5"
-              stroke-linecap="round"
-            ></path>
-          </svg>
+    <nav
+      class="navbar navbar-expand-lg navbar-white bg-white snipcss-Vssa7"
+      aria-label="Eighth navbar example"
+    >
+      <div class="container">
+        <a class="navbar-brand active" href="/">
+          <img
+            src="https://www.geniusmesh.com/public/images/frontend/logo-geniusmesh.svg"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navigationMenu"
+          aria-controls="navigationMenu"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"> </span>
         </button>
+        <div
+          class="collapse navbar-collapse mainMenu LoggedInMenu"
+          id="navigationMenu"
+        >
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="navMenus">
+            <li class="nav-item">
+              <a
+                class="nav-link executive"
+                aria-current="page"
+                href="/jobseekers-landing"
+              >
+                Executives
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link employers active" href="/employer-landing">
+                Employers
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/private-equity"> Private Equity </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/events-list"> Events </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link resources-parent" href="javascript:;">
+                Resources
+              </a>
+              <ul class="sub">
+                <li class="sub-nav-item">
+                  <a class="sub-nav-link" href="/blogs"> Blog </a>
+                </li>
+                <li class="sub-nav-item">
+                  <a class="sub-nav-link" href="/resources-list">
+                    Knowledge Center
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/about-us"> About us </a>
+            </li>
+          </ul>
+          <div class="text-end">
+            <button type="button" class="btn loginSign">
+              <i class="fa fa-user"> </i>
+              <span class="loginText"> Login/Sign-up </span>
+            </button>
+          </div>
+        </div>
       </div>
-    </section>
+    </nav>
+
     <!-- ***** Navbar End ***** -->
     <section
       class="border-section section main-banner"
@@ -168,9 +209,13 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-12">
-            <h2 class="color-2 service-heading fw-bold mb-lg-5 text-uppercase">
-              Key Features
-            </h2>
+            <div class="section-title text-center title-ex1">
+              <h2
+                class="color-2 service-heading fw-bold mb-lg-5 text-uppercase"
+              >
+                Key Features
+              </h2>
+            </div>
 
             <div class="owl-service-item owl-carousel">
               <div class="item">
@@ -248,9 +293,11 @@
         <div class="row">
           <div class="col-lg-12">
             <div class="item">
-              <h2 class="color-2 text-uppercase fw-bold text-center">
-                Heading
-              </h2>
+              <div class="section-title text-center title-ex1">
+                <h2 class="color-2 text-uppercase fw-bold text-center">
+                  Heading
+                </h2>
+              </div>
               <div class="mt-lg-3 heading-p-color">
                 <p>
                   In the United States, which is the home to the majority of
@@ -1264,44 +1311,47 @@
             <div class="col-md-4">
               <div class="price-card">
                 <h2 class="color-2">Opening 1</h2>
-                <p>The standard version</p>
-                <p class="price"><span>49</span>/ Month</p>
-                <ul class="pricing-offers">
-                  <li>6 Domain Names</li>
-                  <li>8 E-Mail Address</li>
-                  <li>10GB Disk Space</li>
-                  <li>Monthly Bandwidth</li>
-                  <li>Powerful Admin Panel</li>
-                </ul>
-                <a href="#" class="btn btn-primary btn-mid">Apply Now</a>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="price-card featured">
-                <h2 class="color-2">Openings2</h2>
-                <p>Most popular choice</p>
-                <p class="price"><span>69</span>/ Month</p>
-                <ul class="pricing-offers">
-                  <li>6 Domain Names</li>
-                  <li>8 E-Mail Address</li>
-                  <li>10GB Disk Space</li>
-                  <li>Monthly Bandwidth</li>
-                  <li>Powerful Admin Panel</li>
+                <p class="fw-bold">Function</p>
+                <p class="color-1 price"><span>Skills:</span></p>
+
+                <ul class="bullet-points">
+                  <li class="ms-lg-4">Skill1</li>
+                  <li class="ms-lg-4">Skill2</li>
+                  <li class="ms-lg-4">Skill3</li>
+                  <li class="ms-lg-4">Skill4</li>
+                  <li class="ms-lg-4">Skill5</li>
                 </ul>
                 <a href="#" class="btn btn-primary btn-mid">Apply Now</a>
               </div>
             </div>
             <div class="col-md-4">
               <div class="price-card">
-                <h2 class="color-2">Openings3</h2>
-                <p>For the whole team</p>
-                <p class="price"><span>89</span>/ Month</p>
-                <ul class="pricing-offers">
-                  <li>6 Domain Names</li>
-                  <li>8 E-Mail Address</li>
-                  <li>10GB Disk Space</li>
-                  <li>Monthly Bandwidth</li>
-                  <li>Powerful Admin Panel</li>
+                <h2 class="color-2">Opening 2</h2>
+                <p class="fw-bold">Function</p>
+                <p class="color-1 price"><span>Skills:</span></p>
+
+                <ul class="bullet-points">
+                  <li class="ms-lg-4">Skill1</li>
+                  <li class="ms-lg-4">Skill2</li>
+                  <li class="ms-lg-4">Skill3</li>
+                  <li class="ms-lg-4">Skill4</li>
+                  <li class="ms-lg-4">Skill5</li>
+                </ul>
+                <a href="#" class="btn btn-primary btn-mid">Apply Now</a>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="price-card">
+                <h2 class="color-2">Opening 3</h2>
+                <p class="fw-bold">Function</p>
+                <p class="color-1 price"><span>Skills:</span></p>
+
+                <ul class="bullet-points">
+                  <li class="ms-lg-4">Skill1</li>
+                  <li class="ms-lg-4">Skill2</li>
+                  <li class="ms-lg-4">Skill3</li>
+                  <li class="ms-lg-4">Skill4</li>
+                  <li class="ms-lg-4">Skill5</li>
                 </ul>
                 <a href="#" class="btn btn-primary btn-mid">Apply Now</a>
               </div>
@@ -1463,11 +1513,13 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-12">
-            <h2
-              class="color-2 service-heading fw-bold mb-lg-5 text-center text-uppercase justify-content-center"
-            >
-              Services
-            </h2>
+            <div class="section-title text-center title-ex1">
+              <h2
+                class="color-2 service-heading fw-bold mb-lg-5 text-center text-uppercase justify-content-center"
+              >
+                Services
+              </h2>
+            </div>
 
             <div class="owl-real-service-item owl-carousel">
               <div class="item">
@@ -1675,6 +1727,14 @@
 
           <div class="footerServices">
             <h3>Links</h3>
+            <p>About Us</p>
+            <p>Blog</p>
+            <p>Events</p>
+            <p>Resources</p>
+            <p>Contact us</p>
+          </div>
+          <div class="footerServices">
+            <h3>Private Equity <br /></h3>
             <p>About Us</p>
             <p>Blog</p>
             <p>Events</p>
