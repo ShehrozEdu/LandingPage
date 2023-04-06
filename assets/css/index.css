@@ -903,7 +903,7 @@ TOP COMPANIES WE HAVE WORKED WITH
   left: auto;
   top: auto;
   right: 37%;
-  bottom: 2px;
+  bottom: -26px;
   width: 130px;
   height: 130px;
   border-radius: 100%;
@@ -919,7 +919,7 @@ TOP COMPANIES WE HAVE WORKED WITH
 .div-block-228 {
   position: absolute;
   left: auto;
-  top: 38px;
+  top: 3px;
   right: 31%;
   bottom: 2px;
   width: 130px;
@@ -1586,6 +1586,37 @@ header
     display: none;
   }
 }
+/* ??SERVICES NEW CONTENT??????? */
+.expertNetwork .card {
+  background: #ffffff;
+  box-shadow: 0px 0px 20px rgba(220, 227, 255, 0.72);
+  padding: 12%;
+  border: none;
+  transition: 1s;
+  top: 0px;
+  position: relative;
+  height: 100%;
+}
+
+.expertNetwork .card:hover {
+  top: -20px;
+  z-index: 1;
+  transition: 1s;
+}
+
+.expertNetwork .card span {
+  font-size: 50px;
+  font-weight: 800;
+  color: #2bcdc0;
+}
+
+.expertNetwork .card p {
+  color: #153f5b;
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-bottom: 0px;
+}
+/* ??SERVICES NEW CONTENT ENDS??????? */
 /* ????????????????????????????????????????TESTIMonials????????????????????????????????????????????? */
 .testimonials h2 {
   color: #010d45;
@@ -2136,6 +2167,7 @@ services
   /* background-color: rgba(231, 241, 245, 0.8); */
   /* position: absolute; */
   width: 100%;
+  padding-bottom: 100px;
 }
 
 .services .item {
@@ -2155,6 +2187,9 @@ services
 .services .item .icon {
   max-width: 60px;
   margin: 0 auto;
+}
+.section-title h2 {
+  padding-top: 100px;
 }
 
 .services .item h4 {
@@ -2809,13 +2844,19 @@ section.our-facts h2 {
   content: "%";
   margin-left: 3px;
 }
+.plus .count-digit-plus:after {
+  content: "+";
+  margin-left: 3px;
+}
 
-.count-digit {
+.count-digit,
+.count-digit-plus {
   margin: 5px 0px;
   color: #2bcdc0;
   font-weight: 700;
   font-size: 36px;
 }
+
 .count-title {
   font-size: 18px;
   font-weight: 500;
@@ -2845,6 +2886,73 @@ section.our-facts .video img {
 /* 
 ---------------------------------------------
 contact us
+--------------------------------------------- 
+*/
+/* 
+---------------------------------------------
+Community
+--------------------------------------------- 
+*/
+
+.communitynetwork {
+  background-image: url(https://www.geniusmesh.com/public/images/frontend/community-network.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-repeat-x: no-repeat;
+  background-repeat-y: no-repeat;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.acceleratedHiring {
+  background: #f4f7ff;
+}
+.checklist {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+ul.checklist {
+  list-style-type: none;
+  padding: 0;
+  margin: 40px 0 45px 0;
+}
+
+ul.checklist li {
+  margin-bottom: 12px;
+  color: #010d45;
+  font-size: 20px;
+  padding-left: 39px;
+  position: relative;
+}
+
+.bookDemoBtn {
+  background: #2bcdc0;
+  color: #fff;
+  height: 50px;
+  min-width: 168px;
+  text-align: center;
+  font-size: 18px;
+}
+
+button:not(:disabled) {
+  cursor: pointer;
+}
+
+.btn:hover {
+  color: var(--bs-btn-hover-color);
+  background-color: var(--bs-btn-hover-bg);
+  border-color: var(--bs-btn-hover-border-color);
+}
+
+.bookDemoBtn:hover {
+  background: #010d45;
+  color: #fff;
+}
+/* 
+---------------------------------------------
+community end
 --------------------------------------------- 
 */
 

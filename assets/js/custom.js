@@ -109,7 +109,7 @@
   $(".owl-service-item").owlCarousel({
     items: 3,
     loop: true,
-    dots: true,
+    // dots: true,
     nav: true,
     autoplay: true,
     margin: 30,
@@ -128,7 +128,7 @@
   $(".owl-real-service-item").owlCarousel({
     items: 3,
     loop: true,
-    dots: true,
+    // dots: true,
     nav: true,
     autoplay: true,
     margin: 30,
