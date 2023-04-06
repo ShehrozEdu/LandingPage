@@ -697,7 +697,7 @@ ul {
 }
 /* =============================Top Executive From============================= */
 .topExecutive {
-  padding: 31px 72px;
+  padding: 80px 72px;
 }
 .topExecutive h2 {
   font-weight: 700;
@@ -769,11 +769,11 @@ TOP COMPANIES WE HAVE WORKED WITH
 .div-block-220 {
   position: absolute;
   left: auto;
-  top: 0;
-  right: 17%;
+  top: 43px;
+  right: -2%;
   bottom: auto;
-  width: 160px;
-  height: 160px;
+  width: 120px;
+  height: 120px;
   border-radius: 100%;
   background-color: #fff;
   background-image: url("../images/company8.png");
@@ -795,7 +795,7 @@ TOP COMPANIES WE HAVE WORKED WITH
   height: 120px;
   border-radius: 100%;
   background-color: #fff;
-  background-image: url("../images/company1.jpg");
+  background-image: url("../images/company1.png");
   background-position: 50% 50%;
   background-size: 100px 100px;
   background-repeat: no-repeat;
@@ -806,15 +806,15 @@ TOP COMPANIES WE HAVE WORKED WITH
 
 .div-block-222 {
   position: absolute;
-  left: 0;
-  top: 37%;
+  left: -30px;
+  top: 36%;
   right: auto;
   bottom: auto;
-  width: 100px;
-  height: 100px;
+  width: 130px;
+  height: 130px;
   border-radius: 100%;
   background-color: #fff;
-  background-image: url("../images/company2.jpg");
+  background-image: url("../images/company6.png");
   background-position: 50% 50%;
   background-size: 100px 100px;
   background-repeat: no-repeat;
@@ -829,11 +829,11 @@ TOP COMPANIES WE HAVE WORKED WITH
   top: 190px;
   right: auto;
   bottom: auto;
-  width: 170px;
-  height: 170px;
+  width: 200px;
+  height: 200px;
   border-radius: 100%;
   background-color: #fff;
-  background-image: url("../images/company3.png");
+  background-image: url("../images/company2.png");
   background-position: 50% 50%;
   background-size: auto;
   background-repeat: no-repeat;
@@ -890,7 +890,7 @@ TOP COMPANIES WE HAVE WORKED WITH
   height: 130px;
   border-radius: 100%;
   background-color: #fff;
-  background-image: url("../images/company6.png");
+  background-image: url("../images/company3.png");
   background-position: 50% 50%;
   background-size: auto;
   background-repeat: no-repeat;
@@ -909,6 +909,24 @@ TOP COMPANIES WE HAVE WORKED WITH
   border-radius: 100%;
   background-color: #fff;
   background-image: url("../images/company7.png");
+  background-position: 50% 50%;
+  background-size: auto;
+  background-repeat: no-repeat;
+  box-shadow: 0 50px 50px 0 rgba(0, 0, 0, 0.1);
+  background-repeat-x: no-repeat;
+  background-repeat-y: no-repeat;
+}
+.div-block-228 {
+  position: absolute;
+  left: auto;
+  top: 38px;
+  right: 31%;
+  bottom: 2px;
+  width: 130px;
+  height: 130px;
+  border-radius: 100%;
+  background-color: #fff;
+  background-image: url("../images/CMA.png");
   background-position: 50% 50%;
   background-size: auto;
   background-repeat: no-repeat;
