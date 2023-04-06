@@ -697,7 +697,10 @@ ul {
 }
 /* =============================Top Executive From============================= */
 .topExecutive {
-  padding: 80px 72px;
+  padding-bottom: 80px;
+  padding-top: 25px;
+  padding-left: 72px;
+  padding-right: 72px;
 }
 .topExecutive h2 {
   font-weight: 700;
@@ -1586,7 +1589,7 @@ header
     display: none;
   }
 }
-/* ??SERVICES NEW CONTENT??????? */
+/* ??Features NEW CONTENT??????? */
 .expertNetwork .card {
   background: #ffffff;
   box-shadow: 0px 0px 20px rgba(220, 227, 255, 0.72);
@@ -1616,7 +1619,7 @@ header
   text-transform: uppercase;
   margin-bottom: 0px;
 }
-/* ??SERVICES NEW CONTENT ENDS??????? */
+/* ??features NEW CONTENT ENDS??????? */
 /* ????????????????????????????????????????TESTIMonials????????????????????????????????????????????? */
 .testimonials h2 {
   color: #010d45;
@@ -1910,7 +1913,7 @@ p {
 .salaryComparison {
   width: 100%;
   padding: 0px 70px;
-  margin-top: 80px;
+  /* margin-top: 80px; */
 }
 .salaryComaprisonContainer {
   background: linear-gradient(
@@ -2167,11 +2170,17 @@ services
   /* background-color: rgba(231, 241, 245, 0.8); */
   /* position: absolute; */
   width: 100%;
-  padding-bottom: 100px;
+  padding-bottom: 60px;
 }
-
+.padding-top-services {
+  padding-top: 60px;
+}
+.service-background {
+}
 .services .item {
   /* background-color: rgb(217, 236, 236); */
+  background: #ffffff;
+  box-shadow: 0px 0px 20px rgba(220, 227, 255, 0.72);
   /* background-color: #80e9e0; */
   /* background-image: linear-gradient(62deg, #010d45 0%, #010b10 50%); */
   background-repeat: no-repeat;
@@ -2189,7 +2198,7 @@ services
   margin: 0 auto;
 }
 .section-title h2 {
-  padding-top: 100px;
+  padding-top: 100pxtop=-e;
 }
 
 .services .item h4 {
