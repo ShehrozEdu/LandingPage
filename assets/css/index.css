@@ -708,8 +708,6 @@ TOP COMPANIES WE HAVE WORKED WITH
   margin-bottom: 10rem;
 }
 .top-companies-heading {
-  /* margin: 0.67em 0; */
-
   color: #010d45;
   font-size: 66px;
   font-weight: 900;
@@ -908,20 +906,20 @@ TOP COMPANIES WE HAVE WORKED WITH
     margin-bottom: 17rem;
   }
   .div-block-220 {
-    top: 351px;
+    top: 842px;
     right: 98%;
     width: 100px;
     height: 100px;
   }
   .div-block-221 {
     left: -91%;
-    top: 86%;
+    top: 112%;
     width: 100px;
     height: 100px;
   }
   .div-block-222 {
-    left: -447px;
-    top: 67%;
+    left: -451px;
+    top: 133%;
     right: auto;
     bottom: auto;
     width: 100px;
@@ -929,33 +927,97 @@ TOP COMPANIES WE HAVE WORKED WITH
   }
   .div-block-223 {
     left: -55%;
-    top: 358px;
+    top: 598px;
     width: 120px;
     height: 120px;
   }
 
   .div-block-224 {
     left: auto;
-    top: 89%;
+    top: 131%;
     right: 482px;
     width: 100px;
     height: 100px;
   }
   .div-block-225 {
     left: -53%;
-    bottom: -9%;
+    bottom: -51%;
     width: 100px;
     height: 100px;
   }
   .div-block-226 {
     right: 171%;
-    bottom: -154px;
+    bottom: -394px;
     width: 100px;
     height: 100px;
   }
   .div-block-227 {
     right: 133%;
-    bottom: -168px;
+    bottom: -402px;
+    width: 100px;
+    height: 100px;
+  }
+  .div-block-228 {
+    top: 607px;
+    right: 97%;
+    bottom: 0px;
+    width: 100px;
+    height: 100px;
+  }
+}
+@media screen and (min-width: 376px) and (max-width: 415px) {
+  .worked-with-companies {
+    margin-bottom: 22rem;
+  }
+  .div-block-220 {
+    top: 842px;
+    right: 98%;
+    width: 100px;
+    height: 100px;
+  }
+  .div-block-221 {
+    left: -78%;
+    top: 112%;
+    width: 100px;
+    height: 100px;
+  }
+  .div-block-222 {
+    left: -383px;
+    top: 133%;
+    right: auto;
+    bottom: auto;
+    width: 100px;
+    height: 100px;
+  }
+  .div-block-223 {
+    left: -50%;
+    top: 598px;
+    width: 120px;
+    height: 120px;
+  }
+
+  .div-block-224 {
+    left: auto;
+    top: 131%;
+    right: 482px;
+    width: 100px;
+    height: 100px;
+  }
+  .div-block-225 {
+    left: -47%;
+    bottom: -51%;
+    width: 100px;
+    height: 100px;
+  }
+  .div-block-226 {
+    right: 156%;
+    bottom: -394px;
+    width: 100px;
+    height: 100px;
+  }
+  .div-block-227 {
+    right: 126%;
+    bottom: -402px;
     width: 100px;
     height: 100px;
   }
@@ -2676,6 +2738,10 @@ section.testimonials {
 @media screen and (max-width: 768px) {
   .manual-font-sizing {
     font-size: 20px !important;
+  }
+  .testimonialsCarousel {
+    background-image: url("");
+    padding: 0;
   }
 }
 /*
