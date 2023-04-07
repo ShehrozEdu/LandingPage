@@ -701,6 +701,19 @@ ul {
     padding-bottom: 0;
   }
 }
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .executiveContainer img {
+    width: 4rem;
+    height: 4rem;
+  }
+  .brand-img-low {
+    width: 3rem !important;
+    height: 3rem;
+  }
+  .topExecutive {
+    padding-bottom: 0;
+  }
+}
 /* 
 ---------------------------------------------
 TOP COMPANIES WE HAVE WORKED WITH
@@ -3106,6 +3119,7 @@ ul.checklist li {
   min-width: 168px;
   text-align: center;
   font-size: 18px;
+  border-radius: 5px;
 }
 
 .bookDemoBtn:hover {
