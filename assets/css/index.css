@@ -2486,6 +2486,12 @@ services
   line-height: 50px;
 }
 
+@media screen and (max-width: 768px) {
+  .services {
+    padding-bottom: 20px !important;
+  }
+}
+
 /*
 ---------------------------------------------
 upcoming meetings
