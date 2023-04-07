@@ -2084,7 +2084,11 @@ p {
     padding: 0;
   }
   .manual-size-testimonial-text {
-    font-size: 1.4rem !important;
+    font-size: 1rem !important;
+  }
+  .testimonial_content {
+    font-family: "Rubik", sans-serif;
+    /* padding: 20px; */
   }
 }
 
@@ -2855,7 +2859,7 @@ our facts
   right: 0;
 }
 .section-title.title-ex1 p {
-  font-family: "Montserrat", sans-serif;
+  /* font-family: "Montserrat", sans-serif; */
   color: #8b8e93;
   font-size: 14px;
   font-weight: 300;
@@ -3105,6 +3109,21 @@ ul.checklist li {
 .bookDemoBtn:hover {
   background: #010d45;
   color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  .communitynetwork {
+    padding-top: 20px !important;
+  }
+  .community-text {
+    font-size: 1.2rem;
+  }
+  .community-li-text {
+    font-size: 16px !important  ;
+  }
+  ul.checklist li {
+    padding: 0;
+  }
 }
 
 /* 
