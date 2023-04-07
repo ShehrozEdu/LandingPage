@@ -326,21 +326,6 @@ body {
 }
 /* ============Navbar Styling===================== */
 .navbar {
-  --bs-navbar-padding-x: 0;
-  --bs-navbar-padding-y: 0.5rem;
-  --bs-navbar-color: rgba(0, 0, 0, 0.55);
-  --bs-navbar-hover-color: rgba(0, 0, 0, 0.7);
-  --bs-navbar-disabled-color: rgba(0, 0, 0, 0.3);
-  --bs-navbar-active-color: rgba(0, 0, 0, 0.9);
-  --bs-navbar-brand-padding-y: 0.3125rem;
-  --bs-navbar-brand-margin-end: 1rem;
-  --bs-navbar-brand-font-size: 1.25rem;
-  --bs-navbar-brand-color: rgba(0, 0, 0, 0.9);
-  --bs-navbar-brand-hover-color: rgba(0, 0, 0, 0.9);
-  --bs-navbar-nav-link-padding-x: 0.5rem;
-  --bs-navbar-toggler-padding-y: 0.25rem;
-  --bs-navbar-toggler-padding-x: 0.75rem;
-  --bs-navbar-toggler-font-size: 1.25rem;
   --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
   --bs-navbar-toggler-border-color: rgba(0, 0, 0, 0.1);
   --bs-navbar-toggler-border-radius: 0.375rem;
@@ -350,7 +335,7 @@ body {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  padding: var(--bs-navbar-padding-y) var(--bs-navbar-padding-x);
+  /* padding: var(--bs-navbar-padding-y) var(--bs-navbar-padding-x); */
 }
 
 @media (min-width: 992px) {
@@ -451,18 +436,13 @@ a:hover {
   color: var(--bs-navbar-brand-hover-color);
 }
 
-button {
+.navbar button {
   border-radius: 0;
   margin: 0;
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
   text-transform: none;
-}
-
-[type="button"],
-button {
-  -webkit-appearance: button;
 }
 
 .navbar-toggler {
@@ -537,10 +517,6 @@ ul {
 }
 
 .navbar-nav {
-  --bs-nav-link-padding-x: 0;
-  --bs-nav-link-padding-y: 0.5rem;
-  --bs-nav-link-color: var(--bs-navbar-color);
-  --bs-nav-link-hover-color: var(--bs-navbar-hover-color);
   display: flex;
   flex-direction: column;
   padding-left: 0;
@@ -579,41 +555,8 @@ ul {
   padding-right: 15px;
 }
 
-.btn {
-  --bs-btn-padding-x: 0.75rem;
-  --bs-btn-padding-y: 0.375rem;
-  --bs-btn-font-size: 1rem;
-  --bs-btn-font-weight: 400;
-  --bs-btn-line-height: 1.5;
-  --bs-btn-color: #212529;
-  --bs-btn-bg: transparent;
-  --bs-btn-border-width: 1px;
-  --bs-btn-border-color: transparent;
-  --bs-btn-border-radius: 0.375rem;
-  --bs-btn-hover-border-color: transparent;
-  display: inline-block;
-  padding: var(--bs-btn-padding-y) var(--bs-btn-padding-x);
-  font-family: var(--bs-btn-font-family);
-  font-size: var(--bs-btn-font-size);
-  font-weight: var(--bs-btn-font-weight);
-  line-height: var(--bs-btn-line-height);
-  color: var(--bs-btn-color);
-  text-align: center;
-  text-decoration: none;
-  vertical-align: middle;
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  user-select: none;
-  border: var(--bs-btn-border-width) solid var(--bs-btn-border-color);
-  border-radius: var(--bs-btn-border-radius);
-  background-color: var(--bs-btn-bg);
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
-    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-}
-
 .loginSign {
-  background: #010d45;
+  background: #010d45 !important;
   box-shadow: 0px 10px 20px #97a9ff;
   color: #fff;
 }
@@ -702,6 +645,7 @@ ul {
   padding-left: 72px;
   padding-right: 72px;
 }
+
 .topExecutive h2 {
   font-weight: 700;
   font-size: 15px;
@@ -738,6 +682,22 @@ ul {
 .topExecutiveContainer {
   display: none;
 }
+@media screen and (max-width: 767px) {
+  .topExecutive {
+    padding-top: 0.8rem;
+    padding-top: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .executiveContainer img {
+    width: 4rem;
+    height: 3rem;
+  }
+  .brand-img-low {
+    width: 4rem !important;
+    height: 3rem;
+  }
+}
 /* 
 ---------------------------------------------
 TOP COMPANIES WE HAVE WORKED WITH
@@ -766,7 +726,7 @@ TOP COMPANIES WE HAVE WORKED WITH
   width: 500px;
   height: 550px;
   /* margin-top: 180px; */
-  margin-left: 150px;
+  /* margin-left: 150px; */
 }
 
 .div-block-220 {
@@ -936,6 +896,76 @@ TOP COMPANIES WE HAVE WORKED WITH
   box-shadow: 0 50px 50px 0 rgba(0, 0, 0, 0.1);
   background-repeat-x: no-repeat;
   background-repeat-y: no-repeat;
+}
+
+@media screen and (max-width: 768px) {
+  .top-companies-heading {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    min-height: 0;
+  }
+  .worked-with-companies {
+    margin-bottom: 17rem;
+  }
+  .div-block-220 {
+    top: 351px;
+    right: 98%;
+    width: 100px;
+    height: 100px;
+  }
+  .div-block-221 {
+    left: -91%;
+    top: 86%;
+    width: 100px;
+    height: 100px;
+  }
+  .div-block-222 {
+    left: -447px;
+    top: 67%;
+    right: auto;
+    bottom: auto;
+    width: 100px;
+    height: 100px;
+  }
+  .div-block-223 {
+    left: -55%;
+    top: 358px;
+    width: 120px;
+    height: 120px;
+  }
+
+  .div-block-224 {
+    left: auto;
+    top: 89%;
+    right: 482px;
+    width: 100px;
+    height: 100px;
+  }
+  .div-block-225 {
+    left: -53%;
+    bottom: -9%;
+    width: 100px;
+    height: 100px;
+  }
+  .div-block-226 {
+    right: 171%;
+    bottom: -154px;
+    width: 100px;
+    height: 100px;
+  }
+  .div-block-227 {
+    right: 133%;
+    bottom: -168px;
+    width: 100px;
+    height: 100px;
+  }
+  .div-block-228 {
+    top: 607px;
+    right: 97%;
+    bottom: 0px;
+    width: 100px;
+    height: 100px;
+  }
 }
 /* 
 ---------------------------------------------
@@ -1914,6 +1944,7 @@ p {
   width: 100%;
   padding: 0px 70px;
   /* margin-top: 80px; */
+  margin-bottom: 2rem;
 }
 .salaryComaprisonContainer {
   background: linear-gradient(
@@ -2073,6 +2104,18 @@ p {
     display: flex !important;
   }
 }
+@media (max-width: 767px) {
+  .header-area .main-nav .nav {
+    display: flex !important;
+  }
+  .salaryComparison {
+    padding: 0.2rem;
+  }
+  .salarycompareText h3 {
+    font-size: 20px;
+    /* line-height: 0; */
+  }
+}
 
 /* 
 ---------------------------------------------
@@ -2081,7 +2124,7 @@ banner
 */
 
 .main-banner {
-  position: relative;
+  /* position: relative; */
   max-height: 100%;
   overflow: hidden;
   margin-bottom: 3rem;
@@ -2108,10 +2151,10 @@ banner
 }
 
 .main-banner .caption {
-  position: absolute;
-  top: 50%;
-  left: 10%;
-  transform: translateY(-45%);
+  /* position: absolute; */
+  /* top: 50%; */
+  /* left: 10%; */
+  /* transform: translateY(-45%); */
 }
 
 .main-banner .caption h6 {
@@ -2138,6 +2181,9 @@ banner
   color: #2bcdc0;
   font-weight: 900;
 }
+.btn-font {
+  font-size: 1rem;
+}
 
 .main-banner .caption p {
   color: #fff;
@@ -2153,7 +2199,9 @@ banner
   .main-banner .caption h6 {
     font-weight: 500;
   }
-
+  .btn-font {
+    font-size: 0.8rem;
+  }
   .main-banner .caption h2 {
     font-size: 36px;
   }
@@ -2196,9 +2244,6 @@ services
 .services .item .icon {
   max-width: 60px;
   margin: 0 auto;
-}
-.section-title h2 {
-  padding-top: 100pxtop=-e;
 }
 
 .services .item h4 {
@@ -2543,10 +2588,7 @@ section.apply-now .item p {
     font-size: 1.2rem;
   }
 }
-.accordion-head .icon {
-  float: right;
-  transition: transform 200ms ease-in-out;
-}
+
 .accordion-head.is-open {
   color: #2bcdc0;
   border-bottom: none;
@@ -2564,7 +2606,11 @@ section.apply-now .item p {
   padding: 20px;
   padding-top: 0;
 }
-
+@media screen and (max-width: 768px) {
+  section.apply-now {
+    padding: 0;
+  }
+}
 /* 
 ---------------------------------------------
 courses
@@ -2627,6 +2673,11 @@ section.testimonials {
 .testimonial_content {
   font-size: 19px !important;
 }
+@media screen and (max-width: 768px) {
+  .manual-font-sizing {
+    font-size: 20px !important;
+  }
+}
 /*
 ---------------------------------------------
 our facts
@@ -2635,6 +2686,9 @@ our facts
 /* ?????????????????????????????????????TESTING CSS????????????????????????????????????????? */
 .section-title {
   position: relative;
+}
+.manual-font-sizing {
+  font-size: 4rem !important;
 }
 .section-title h2 {
   color: #1d2025;
@@ -2806,6 +2860,11 @@ ul li {
   line-height: 40px;
   padding: 0 20px;
 }
+@media screen and (max-width: 768px) {
+  .price-card {
+    margin-bottom: 1rem;
+  }
+}
 /* ?????????????????????????????????????TESTING CSS????????????????????????????????????????? */
 section.our-facts {
   /* background-image: url(../images/bg-facts.png); */
@@ -2937,28 +2996,23 @@ ul.checklist li {
 }
 
 .bookDemoBtn {
-  background: #2bcdc0;
-  color: #fff;
+  background: #2bcdc0 !important;
+  color: #fff !important;
   height: 50px;
   min-width: 168px;
   text-align: center;
   font-size: 18px;
 }
 
-button:not(:disabled) {
-  cursor: pointer;
-}
-
-.btn:hover {
-  color: var(--bs-btn-hover-color);
-  background-color: var(--bs-btn-hover-bg);
-  border-color: var(--bs-btn-hover-border-color);
+.bookDemoBtn:hover {
+  background-color: #000932 !important;
 }
 
 .bookDemoBtn:hover {
   background: #010d45;
   color: #fff;
 }
+
 /* 
 ---------------------------------------------
 community end
@@ -3072,74 +3126,139 @@ section.contact-us .right-info ul li span {
   font-weight: 700;
 }
 
+/*
+---------------------------------------------
+FOOTER STARTS
+---------------------------------------------
+*/
 footer {
-  margin-top: 80px;
+  display: inline-block;
   width: 100%;
-  height: auto;
-  background: #161c28;
-  padding: 58px 72px;
 }
-footer .footerContainer {
+.mainfooter {
+  background: #010d45;
+  display: inline-block;
   width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
+  color: #fff;
 }
-.footerContainer .companyDetails p {
-  font-weight: 500;
+.copyrightsRow {
+  border-top: 1px solid #001473;
+  display: inline-block;
+  width: 100%;
+  padding: 15px 0px;
+}
+.mainfooter p {
   font-size: 14px;
-  line-height: 16px;
-  color: #d1d1d1;
-  margin-top: 39px;
-}
-.footerContainer .companyDetails h3 {
-  margin-top: 23px;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 34px;
-  color: #ffffff;
-}
-.footerServices {
-  display: flex;
-  flex-direction: column;
-}
-.footerServices h3 {
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 21px;
-  color: #ffffff;
-  margin-bottom: 10px;
+  font-weight: 300;
 }
 
-.footerServices p {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 34px;
-  color: #e7e7e7;
-  cursor: pointer;
+.ourApp {
+  display: inline-block;
+  width: 100%;
 }
-.footerServices .location {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 16px;
-  color: #e7e7e7;
+.mainfooter ul {
+  margin: 0px;
+  padding: 0px;
 }
-.footerServices .emailId {
-  margin-top: 37px;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 16px;
-  color: #e7e7e7;
-}
-.footerServices h4 {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 16px;
-  color: #ffffff;
-  margin-top: 9px;
+.contactInfo {
+  display: inline-block;
+  width: 100%;
+  margin-top: 15px;
 }
 
+.socialIconFooter {
+  display: inline-block;
+  width: 100%;
+  margin-top: 30px;
+}
+@media (min-width: 576px) {
+  .ourApp .appLinks {
+    display: flex;
+  }
+
+  .mainfooter ul li {
+    list-style: none;
+    padding: 0px;
+  }
+  .contactInfo a {
+    color: #e7e7e7;
+    text-decoration: none;
+    display: inline-block;
+    clear: both;
+  }
+  .contactInfo a:hover {
+    color: #2bcdc0;
+  }
+
+  .socialIconFooter ul {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+  }
+
+  .copyrightsRow p {
+    font-size: 14px;
+    margin-bottom: 0px;
+  }
+
+  .copyrightsRow ul {
+    float: right;
+  }
+
+  .appImgLink {
+    max-width: 48%;
+    flex: 0 0 auto;
+  }
+
+  .appImgLink + .appImgLink {
+    margin-left: 4%;
+  }
+
+  .mainfooter ul li a {
+    color: #e7e7e7;
+    font-size: 14px;
+    text-decoration: none;
+    padding: 5px 0px;
+    display: inline-block;
+    width: 100%;
+  }
+
+  .mainfooter ul li a:hover {
+    color: #2bcdc0;
+  }
+
+  .socialIconFooter ul li + li {
+    margin-left: 15px;
+  }
+
+  .copyrightsRow ul li {
+    float: left;
+    list-style: none;
+  }
+
+  .copyrightsRow ul li + li {
+    border-left: 1px solid #001473;
+  }
+
+  .appImgLink img {
+    max-height: 31px;
+  }
+
+  .socialIconFooter ul li a {
+    color: #c5cfff;
+  }
+
+  .copyrightsRow ul li a {
+    padding: 0px 15px;
+    display: inline-block;
+    font-size: 14px;
+  }
+}
+/*
+---------------------------------------------
+FOOTER ENDS
+---------------------------------------------
+*/
 /*
 ---------------------------------------------
 heading page
