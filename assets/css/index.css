@@ -690,12 +690,15 @@ ul {
     padding-right: 0px;
   }
   .executiveContainer img {
-    width: 4rem;
-    height: 3rem;
+    width: 5rem;
+    height: 5rem;
   }
   .brand-img-low {
-    width: 4rem !important;
+    width: 3rem !important;
     height: 3rem;
+  }
+  .topExecutive {
+    padding-bottom: 0;
   }
 }
 /* 
@@ -963,6 +966,75 @@ TOP COMPANIES WE HAVE WORKED WITH
     bottom: 0px;
     width: 100px;
     height: 100px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .top-companies-heading {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    min-height: 0;
+  }
+  .worked-with-companies {
+    margin-bottom: 17rem;
+  }
+  .div-block-220 {
+    top: 674px;
+    right: 111%;
+    width: 120px;
+    height: 120px;
+  }
+  .div-block-221 {
+    left: -136%;
+    top: 57%;
+    width: 120px;
+    height: 120px;
+  }
+  .div-block-222 {
+    top: 92%;
+    right: auto;
+    bottom: auto;
+    left: -670px;
+    width: 120px;
+    height: 120px;
+  }
+  .div-block-223 {
+    left: -92%;
+    top: 297px;
+    width: 180px;
+    height: 180px;
+  }
+
+  .div-block-224 {
+    left: auto;
+    top: 91%;
+    right: 548px;
+    width: 120px;
+    height: 120px;
+  }
+  .div-block-225 {
+    left: -86%;
+    bottom: -13%;
+    width: 120px;
+    height: 120px;
+  }
+  .div-block-226 {
+    right: 210%;
+    bottom: -245px;
+    width: 120px;
+    height: 120px;
+  }
+  .div-block-227 {
+    right: 164%;
+    bottom: -245px;
+    width: 120px;
+    height: 120px;
+  }
+  .div-block-228 {
+    top: 315px;
+    right: 108%;
+    bottom: 0px;
+    width: 120px;
+    height: 120px;
   }
 }
 @media screen and (min-width: 376px) and (max-width: 415px) {
@@ -1715,7 +1787,7 @@ header
 /* ????????????????????????????????????????TESTIMonials????????????????????????????????????????????? */
 .testimonials h2 {
   color: #010d45;
-  font-size: 66px;
+  font-size: 4rem !important;
   font-weight: 900;
   min-height: 145px;
 }
@@ -2000,6 +2072,22 @@ p {
   font-size: 18px;
   color: #2bcdc0;
 }
+
+@media screen and (max-width: 768px) {
+  .testimonials h2 {
+    text-align: center;
+    min-height: 0;
+    font-size: 24px !important;
+  }
+  .testimonialsCarousel {
+    background-image: url("");
+    padding: 0;
+  }
+  .manual-size-testimonial-text {
+    font-size: 1.4rem !important;
+  }
+}
+
 /* ????????????????????????????????????????TESTING CSS ENDS????????????????????????????????????????????? */
 /* =========================Salary Comparison =========================*/
 .salaryComparison {
@@ -2673,77 +2761,6 @@ section.apply-now .item p {
     padding: 0;
   }
 }
-/* 
----------------------------------------------
-courses
---------------------------------------------- 
-*/
-
-section.testimonials {
-  /* background-image: url(../images/meetings-bg.jpg); */
-  background-position: center center;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
-  /* padding-top: 80px; */
-  /* padding-bottom: 130px; */
-}
-/* .user-image {
-  width: 12rem;
-  height: 12rem;
-} */
-
-.testimonials .item .down-content {
-  background-color: #fff;
-}
-
-.testimonials .item .down-content h4 {
-  padding: 25px;
-  font-size: 18px;
-  color: #1f272b;
-  text-align: center;
-  border-bottom: 1px solid #eee;
-}
-
-.testimonials .item .down-content .info {
-  padding: 25px;
-}
-
-.testimonials .item .down-content .info ul li {
-  display: inline-block;
-  margin-right: 1px;
-}
-
-.testimonials .item .down-content .info ul li i {
-  color: #2bcdc0;
-  font-size: 14px;
-}
-
-.testimonials .item .down-content .info span {
-  color: #2bcdc0;
-  font-size: 15px;
-  font-weight: 600;
-  text-align: right;
-  display: inline-block;
-  width: 100%;
-}
-.img-testimonial {
-  height: 6rem;
-  width: 6rem;
-  border-radius: 50%;
-}
-.testimonial_content {
-  font-size: 19px !important;
-}
-@media screen and (max-width: 768px) {
-  .manual-font-sizing {
-    font-size: 20px !important;
-  }
-  .testimonialsCarousel {
-    background-image: url("");
-    padding: 0;
-  }
-}
 /*
 ---------------------------------------------
 our facts
@@ -2753,9 +2770,7 @@ our facts
 .section-title {
   position: relative;
 }
-.manual-font-sizing {
-  font-size: 4rem !important;
-}
+
 .section-title h2 {
   color: #1d2025;
   position: relative;
@@ -2929,6 +2944,19 @@ ul li {
 @media screen and (max-width: 768px) {
   .price-card {
     margin-bottom: 1rem;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .price-card h2 {
+    font-size: 20px !important;
+    font-weight: 600;
+  }
+  .salaryToolImg {
+    width: 9rem;
+    height: 9rem;
+  }
+  .salarycompareText h3 {
+    font-size: 15px !important;
   }
 }
 /* ?????????????????????????????????????TESTING CSS????????????????????????????????????????? */
