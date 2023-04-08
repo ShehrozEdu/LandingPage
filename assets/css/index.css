@@ -914,7 +914,7 @@ TOP COMPANIES WE HAVE WORKED WITH
 
 @media screen and (max-width: 768px) {
   .top-companies-heading {
-    font-size: 1.5rem;
+    font-size: 1.4rem !important;
     margin-top: 1rem;
     min-height: 0;
   }
@@ -1050,9 +1050,26 @@ TOP COMPANIES WE HAVE WORKED WITH
     height: 120px;
   }
 }
-@media screen and (min-width: 376px) and (max-width: 415px) {
+@media screen and (min-width: 200px) and (max-width: 415px) {
   .worked-with-companies {
     margin-bottom: 22rem;
+  }
+  .count-size {
+    font-size: 1rem !important;
+  }
+  .accelerated-margin {
+    font-size: 24px;
+    margin-top: 1rem !important;
+    margin-bottom: 1rem !important;
+  }
+  .count-area-content {
+    padding: 0 !important;
+  }
+  .count-title {
+    letter-spacing: 0px !important;
+  }
+  .count-text-size {
+    font-size: 0.8rem !important;
   }
   .div-block-220 {
     top: 842px;
@@ -1061,13 +1078,13 @@ TOP COMPANIES WE HAVE WORKED WITH
     height: 100px;
   }
   .div-block-221 {
-    left: -78%;
+    left: -73%;
     top: 112%;
     width: 100px;
     height: 100px;
   }
   .div-block-222 {
-    left: -383px;
+    left: -359px;
     top: 133%;
     right: auto;
     bottom: auto;
@@ -1095,7 +1112,7 @@ TOP COMPANIES WE HAVE WORKED WITH
     height: 100px;
   }
   .div-block-226 {
-    right: 156%;
+    right: 151%;
     bottom: -394px;
     width: 100px;
     height: 100px;
@@ -2693,14 +2710,37 @@ section.apply-now {
   padding-bottom: 150px;
 }
 
-section.apply-now .item {
-  /* background-color: rgb(1, 11, 16, 0.8); */
-  /* background-color: #323660; */
-  /* background-color: #323660; */
-
+.section.apply-now .item {
   padding-left: 60px;
   padding-right: 60px;
   margin-bottom: 30px;
+}
+
+/* Media Query for Small Devices (landscape phones) */
+@media (max-width: 767.98px) {
+  .section.apply-now .item {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+/* Media Query for Medium Devices (tablets) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .section.apply-now .item {
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-bottom: 25px;
+  }
+}
+
+/* Media Query for Large Devices (desktops) */
+@media (min-width: 992px) {
+  .section.apply-now .item {
+    padding-left: 60px;
+    padding-right: 60px;
+    margin-bottom: 30px;
+  }
 }
 .blog-img {
   height: 25rem !important;
@@ -2782,6 +2822,7 @@ section.apply-now .item p {
 @media screen and (max-width: 768px) {
   section.apply-now {
     padding: 0;
+    margin-top: 2rem;
   }
 }
 /*
@@ -3084,27 +3125,24 @@ Community
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  background-repeat-x: no-repeat;
-  background-repeat-y: no-repeat;
   padding-top: 120px;
   padding-bottom: 120px;
 }
+
 .acceleratedHiring {
   background: #f4f7ff;
+  padding: 30px;
 }
+
 .checklist {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-}
-
-ul.checklist {
-  list-style-type: none;
   padding: 0;
   margin: 40px 0 45px 0;
 }
 
-ul.checklist li {
+.checklist li {
   margin-bottom: 12px;
   color: #010d45;
   font-size: 20px;
@@ -3131,260 +3169,89 @@ ul.checklist li {
   color: #fff;
 }
 
-@media screen and (max-width: 768px) {
+/* Media queries for responsive design */
+@media (max-width: 768px) {
   .communitynetwork {
-    padding-top: 20px !important;
+    padding-top: 80px;
+    padding-bottom: 80px;
   }
-  .community-text {
-    font-size: 1.2rem;
+
+  .checklist li {
+    font-size: 16px;
+    padding-left: 30px;
   }
-  .community-li-text {
-    font-size: 16px !important  ;
-  }
-  ul.checklist li {
-    padding: 0;
+
+  .bookDemoBtn {
+    min-width: 140px;
+    font-size: 16px;
   }
 }
-
 /* 
 ---------------------------------------------
 community end
 --------------------------------------------- 
 */
 
-section.contact-us {
-  /* background-image: url(../images/meetings-bg.jpg); */
-  background-position: center center;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
-  /* padding: 140px 0px 0px 0px; */
-}
-
-section.contact-us #contact {
-  background-color: #081658 !important;
-  border-radius: 20px;
-  padding: 40px;
-}
-
-section.contact-us #contact h2 {
-  text-transform: uppercase;
-  color: #1f272b;
-  border-bottom: 1px solid #eee;
-  margin-bottom: 40px;
-  padding-bottom: 20px;
-  font-size: 22px;
-  font-weight: 700;
-}
-
-section.contact-us #contact input {
-  width: 100%;
-  height: 40px;
-  border-radius: 20px;
-  background-color: #f7f7f7;
-  outline: none;
-  border: none;
-  box-shadow: none;
-  font-size: 13px;
-  font-weight: 500;
-  color: #7a7a7a;
-  padding: 0px 15px;
-  margin-bottom: 30px;
-}
-
-section.contact-us #contact textarea {
-  width: 100%;
-  min-height: 140px;
-  max-height: 180px;
-  border-radius: 20px;
-  background-color: #f7f7f7;
-  outline: none;
-  border: none;
-  box-shadow: none;
-  font-size: 13px;
-  font-weight: 500;
-  color: #7a7a7a;
-  padding: 15px;
-  margin-bottom: 30px;
-}
-
-section.contact-us #contact button {
-  font-size: 13px;
-  color: #fff;
-  background-color: #2bcdc0;
-  padding: 12px 30px;
-  display: inline-block;
-  border-radius: 22px;
-  font-weight: 500;
-  text-transform: uppercase;
-  transition: all 0.3s;
-  border: none;
-  outline: none;
-}
-
-section.contact-us #contact button:hover {
-  opacity: 0.9;
-}
-
-section.contact-us .right-info {
-  background-color: #2bcdc0;
-  border-radius: 20px;
-  padding: 40px;
-}
-
-section.contact-us .right-info ul li {
-  display: inline-block;
-  border-bottom: 1px solid rgba(250, 250, 250, 0.15);
-  margin-bottom: 30px;
-  padding-bottom: 30px;
-}
-
-section.contact-us .right-info ul li:last-child {
-  margin-bottom: 0;
-  padding-bottom: 0;
-  border-bottom: none;
-}
-
-section.contact-us .right-info ul li h6 {
-  color: #fff;
-  font-size: 15px;
-  font-weight: 600;
-  margin-bottom: 10px;
-}
-
-section.contact-us .right-info ul li span {
-  display: block;
-  font-size: 18px;
-  color: #fff;
-  font-weight: 700;
-}
-
 /*
 ---------------------------------------------
 FOOTER STARTS
 ---------------------------------------------
 */
-footer {
-  display: inline-block;
+/* Footer container */
+.footer {
+  display: flex;
+  flex-direction: column;
   width: 100%;
 }
+
+/* Main footer */
 .mainfooter {
   background: #010d45;
-  display: inline-block;
-  width: 100%;
   color: #fff;
+  padding: 30px;
 }
+
+/* Copyrights row */
 .copyrightsRow {
   border-top: 1px solid #001473;
-  display: inline-block;
-  width: 100%;
   padding: 15px 0px;
 }
+
+/* Footer text */
 .mainfooter p {
   font-size: 14px;
   font-weight: 300;
 }
 
+/* Our App section */
 .ourApp {
-  display: inline-block;
-  width: 100%;
-}
-.mainfooter ul {
-  margin: 0px;
-  padding: 0px;
-}
-.contactInfo {
-  display: inline-block;
-  width: 100%;
-  margin-top: 15px;
+  padding: 30px;
 }
 
+/* Footer list */
+.mainfooter ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Contact info */
+.contactInfo {
+  padding: 15px 0;
+}
+
+/* Social icons */
 .socialIconFooter {
-  display: inline-block;
-  width: 100%;
   margin-top: 30px;
 }
-@media (min-width: 576px) {
-  .ourApp .appLinks {
-    display: flex;
+
+/* Media queries for responsive design */
+@media (max-width: 768px) {
+  .mainfooter {
+    padding: 20px;
   }
 
-  .mainfooter ul li {
-    list-style: none;
-    padding: 0px;
-  }
-  .contactInfo a {
-    color: #e7e7e7;
-    text-decoration: none;
-    display: inline-block;
-    clear: both;
-  }
-  .contactInfo a:hover {
-    color: #2bcdc0;
-  }
-
-  .socialIconFooter ul {
-    margin: 0px;
-    padding: 0px;
-    display: flex;
-  }
-
-  .copyrightsRow p {
-    font-size: 14px;
-    margin-bottom: 0px;
-  }
-
-  .copyrightsRow ul {
-    float: right;
-  }
-
-  .appImgLink {
-    max-width: 48%;
-    flex: 0 0 auto;
-  }
-
-  .appImgLink + .appImgLink {
-    margin-left: 4%;
-  }
-
-  .mainfooter ul li a {
-    color: #e7e7e7;
-    font-size: 14px;
-    text-decoration: none;
-    padding: 5px 0px;
-    display: inline-block;
-    width: 100%;
-  }
-
-  .mainfooter ul li a:hover {
-    color: #2bcdc0;
-  }
-
-  .socialIconFooter ul li + li {
-    margin-left: 15px;
-  }
-
-  .copyrightsRow ul li {
-    float: left;
-    list-style: none;
-  }
-
-  .copyrightsRow ul li + li {
-    border-left: 1px solid #001473;
-  }
-
-  .appImgLink img {
-    max-height: 31px;
-  }
-
-  .socialIconFooter ul li a {
-    color: #c5cfff;
-  }
-
-  .copyrightsRow ul li a {
-    padding: 0px 15px;
-    display: inline-block;
-    font-size: 14px;
+  .ourApp {
+    padding: 20px;
   }
 }
 /*
@@ -3392,40 +3259,6 @@ footer {
 FOOTER ENDS
 ---------------------------------------------
 */
-/*
----------------------------------------------
-heading page
----------------------------------------------
-*/
-
-section.heading-page {
-  background-image: url(../images/heading-bg.jpg);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding-top: 230px;
-  padding-bottom: 110px;
-  text-align: center;
-}
-
-section.heading-page h6 {
-  margin-top: 0px;
-  font-size: 15px;
-  text-transform: uppercase;
-  font-weight: 600;
-  color: #fff;
-  letter-spacing: 1px;
-}
-
-section.heading-page h2 {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  font-size: 36px;
-  text-transform: uppercase;
-  font-weight: 800;
-  color: #fff;
-  letter-spacing: 1px;
-}
 
 /*
 ---------------------------------------------
