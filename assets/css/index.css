@@ -671,7 +671,7 @@ ul {
   object-fit: contain;
 }
 .brand-img-low {
-  width: 5rem !important;
+  width: 6rem !important;
 }
 /* .executiveContainer2 {
   width: 100%;
@@ -924,7 +924,7 @@ TOP COMPANIES WE HAVE WORKED WITH
     height: 100px;
   }
 }
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 769px) and (max-width: 1200px) {
   .top-companies-heading {
     font-size: 1.4rem !important;
     margin-top: 1rem;
