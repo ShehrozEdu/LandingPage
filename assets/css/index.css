@@ -3471,10 +3471,10 @@ Community
   background: #2bcdc0 !important;
   color: #fff !important;
   height: 50px;
-  min-width: 168px;
+  min-width: 180px !important;
   text-align: center;
-  font-size: 18px;
-  border-radius: 5px;
+  font-size: 18px !important;
+  border-radius: 10px !important;
 }
 
 .bookDemoBtn:hover {
