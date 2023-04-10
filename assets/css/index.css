@@ -2376,7 +2376,7 @@ p {
 }
 
 .testimonialsCarousel p {
-  font-size: 22px;
+  font-size: 1rem;
   color: #153f5b;
   text-align: left;
 }
@@ -2415,10 +2415,13 @@ p {
 }
 
 @media screen and (max-width: 768px) {
+  .testimonialsCarousel p {
+    font-size: 0.8rem;
+  }
   .testimonials h2 {
     text-align: center;
+    font-size: 1.4rem !important;
     min-height: 0;
-    font-size: 24px !important;
   }
   .testimonialsCarousel {
     background-image: url("");
@@ -2643,6 +2646,7 @@ banner
   max-height: 100%;
   overflow: hidden;
   margin-bottom: 3rem;
+
   /* background-color: rgba(160, 165, 168, 0.75); */
 }
 
@@ -3038,7 +3042,7 @@ section.apply-now {
   background-repeat: no-repeat;
   background-size: cover;
   padding: 0px 100px;
-  padding-bottom: 150px;
+  padding-bottom: 120px;
 }
 
 .section.apply-now .item {
@@ -3083,7 +3087,7 @@ section.apply-now {
 }
 .bullet-points li {
   list-style: circle !important;
-  /* margin-left: 2rem; */
+  font-size: 1rem;
 }
 section.apply-now .item h3 {
   color: #fff;
