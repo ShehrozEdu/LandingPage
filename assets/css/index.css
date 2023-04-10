@@ -2110,6 +2110,9 @@ header
   text-align: center;
   -webkit-tap-highlight-color: transparent;
 }
+.owl-dots {
+  display: none !important;
+}
 
 .text {
   font-size: 55px;
@@ -3292,7 +3295,7 @@ section.our-facts h2 {
   text-align: center;
   /* background-color: #2bcdc0; */
   border-radius: 20px;
-  padding: 25px 30px 35px 30px;
+  /* padding: 25px 30px 35px 30px; */
   margin: 15px 0px;
 }
 
