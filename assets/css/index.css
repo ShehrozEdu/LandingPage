@@ -718,14 +718,14 @@ TOP COMPANIES WE HAVE WORKED WITH
 --------------------------------------------- 
 */
 .worked-with-companies {
-  padding: 0 120px; /* Updated shorthand property */
+  padding: 0 120px;
   margin-bottom: 10rem;
 }
 
 .top-companies-heading {
   color: #010d45;
-  font-size: 54px; /* Removed duplicate font-size property */
-  font-weight: 700; /* Removed duplicate font-weight property */
+  font-size: 54px;
+  font-weight: 700;
   min-height: 145px;
   margin-top: 12rem;
   margin-bottom: 30px;
@@ -737,6 +737,19 @@ TOP COMPANIES WE HAVE WORKED WITH
   position: relative;
   width: 600px;
   height: 600px;
+  margin: 50px auto;
+  /* clip-path: polygon(
+    50% 0%,
+    82% 12%,
+    100% 43%,
+    94% 76%,
+    70% 100%,
+    30% 100%,
+    6% 76%,
+    0% 43%,
+    18% 12%
+  );
+  background-color: lightblue; */
 }
 
 .div-block-220,
@@ -774,66 +787,64 @@ TOP COMPANIES WE HAVE WORKED WITH
 }
 
 .div-block-220 {
-  top: 43px;
-  right: -2%;
+  top: 10%;
+  left: 39%;
   background-image: url("../images/company8.png");
   background-position: 50% 50%;
   background-size: cover;
 }
 
 .div-block-221 {
-  left: 14%;
-  top: 7%;
+  top: 26%;
+  right: 5%;
   background-image: url("../images/company1.png");
   background-position: 50% 50%;
   background-size: cover;
 }
 
 .div-block-222 {
-  left: -30px;
-  top: 36%;
+  top: 56%;
+  right: 4%;
   background-image: url("../images/company6.png");
   background-position: 50% 50%;
   background-size: cover;
 }
 
 .div-block-223 {
-  left: 39%;
-  top: 37%;
+  top: 83%;
+  right: 72%;
   background-image: url("../images/company2.png");
   background-position: 50% 50%;
   background-size: cover;
 }
 
 .div-block-224 {
-  top: 37%;
-  right: 0;
-  bottom: 0;
+  top: 98%;
+  left: 44%;
   background-image: url("../images/company4.jpg");
   background-position: 50% 50%;
 }
 
 .div-block-225 {
-  left: 14%;
-  bottom: 3%;
+  top: 56%;
+  left: 7%;
   background-image: url("../images/company5.jpg");
   background-position: 50% 50%;
   background-size: cover;
 }
 
 .div-block-226 {
-  top: auto;
-  right: 4%;
-  bottom: 7px;
+  top: 26%;
+  left: 5%;
   background-image: url("../images/company3.png");
   background-position: 50% 50%;
   background-size: cover;
 }
 
 .div-block-227 {
-  top: auto;
-  right: 4%;
-  bottom: 7px;
+  top: 83%;
+  right: 3%;
+  /* bottom: 7px; */
   background-image: url("../images/company7.png");
   background-position: 50% 50%;
   background-size: cover;
