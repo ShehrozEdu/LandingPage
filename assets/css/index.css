@@ -752,7 +752,8 @@ TOP COMPANIES WE HAVE WORKED WITH
 .div-block-224,
 .div-block-225,
 .div-block-226,
-.div-block-227 {
+.div-block-227,
+.div-block-228 {
   position: absolute;
   width: 120px;
   height: 120px;
@@ -814,8 +815,9 @@ TOP COMPANIES WE HAVE WORKED WITH
 .div-block-224 {
   top: 98%;
   left: 44%;
-  background-image: url("../images/company4.jpg");
+  background-image: url("../images/company4.png");
   background-position: 50% 50%;
+  background-size: cover;
 }
 
 .div-block-225 {
@@ -842,6 +844,15 @@ TOP COMPANIES WE HAVE WORKED WITH
   background-position: 50% 50%;
   background-size: cover;
 }
+.div-block-228 {
+  top: 83%;
+  right: 3%;
+  /* bottom: 7px; */
+  background-image: url("../images/CMA.png");
+  position: absolute;
+  background-position: 50% 50%;
+  /* background-size: cover; */
+}
 
 @media screen and (max-width: 768px) {
   .top-companies-heading {
@@ -849,68 +860,138 @@ TOP COMPANIES WE HAVE WORKED WITH
     margin-top: 1rem;
     min-height: 0;
   }
+  .margin-mobile-view-count {
+    margin-top: 6rem !important;
+  }
   .worked-with-companies {
     padding: 0px 48px;
     margin-bottom: 10rem;
   }
   .div-block-220 {
-    top: 842px;
-    right: 98%;
+    top: 45%;
+    left: -25%;
     width: 100px;
     height: 100px;
   }
   .div-block-221 {
-    left: -91%;
-    top: 112%;
+    top: 45%;
+    left: 80%;
     width: 100px;
     height: 100px;
   }
   .div-block-222 {
-    left: -451px;
-    top: 133%;
-    right: auto;
-    bottom: auto;
+    top: 47%;
+    right: 30%;
     width: 100px;
     height: 100px;
   }
   .div-block-223 {
-    left: -55%;
-    top: 598px;
-    width: 120px;
-    height: 120px;
+    left: -25%;
+    top: 93%;
+    width: 100px;
+    height: 100px;
   }
 
   .div-block-224 {
-    left: auto;
-    top: 131%;
-    right: 482px;
+    left: 30%;
+    top: 93%;
     width: 100px;
     height: 100px;
   }
   .div-block-225 {
-    left: -53%;
-    bottom: -51%;
+    left: 80%;
+    top: 1%;
+
     width: 100px;
     height: 100px;
   }
   .div-block-226 {
-    right: 171%;
-    bottom: -394px;
+    left: 27%;
+    top: 1%;
     width: 100px;
     height: 100px;
   }
   .div-block-227 {
-    right: 133%;
-    bottom: -402px;
+    left: -25%;
+    top: 1%;
     width: 100px;
     height: 100px;
   }
   .div-block-228 {
-    top: 607px;
-    right: 97%;
-    bottom: 0px;
+    top: 91%;
+    right: -21%;
     width: 100px;
     height: 100px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .top-companies-heading {
+    font-size: 1.4rem !important;
+    margin-top: 1rem;
+    min-height: 0;
+  }
+  .margin-mobile-view-count {
+    margin-top: 6rem !important;
+  }
+  .worked-with-companies {
+    padding: 0px 48px;
+    margin-bottom: 1rem !important;
+  }
+
+  .div-block-220 {
+    top: 25%;
+    left: 1%;
+    width: 130px;
+    height: 130px;
+  }
+  .div-block-221 {
+    top: 1%;
+    right: -9%;
+    width: 130px;
+    height: 130px;
+  }
+  .div-block-222 {
+    top: 1%;
+    right: 25%;
+    width: 130px;
+    height: 130px;
+  }
+  .div-block-223 {
+    left: 29%;
+    top: 25%;
+    width: 130px;
+    height: 130px;
+  }
+
+  .div-block-224 {
+    left: 43%;
+    top: 51%;
+    width: 130px;
+    height: 130px;
+  }
+  .div-block-225 {
+    left: 29%;
+    top: 1%;
+    width: 130px;
+    height: 130px;
+  }
+  .div-block-226 {
+    left: 1%;
+    top: 1%;
+    width: 130px;
+    height: 130px;
+  }
+  .div-block-227 {
+    left: 57%;
+    top: 25%;
+    width: 130px;
+    height: 130px;
+  }
+  .div-block-228 {
+    top: 25%;
+    right: -9%;
+    width: 130px;
+    height: 130px;
   }
 }
 /* @media screen and (max-width: 1200px) {
@@ -2530,6 +2611,26 @@ p {
     /* line-height: 0; */
   }
 }
+@media screen and (max-width: 768px) {
+  .salaryComaprisonContainer {
+    padding: 30px 8px !important;
+  }
+  .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  .icon {
+    margin-bottom: 1rem;
+  }
+  .down-content {
+    text-align: center;
+  }
+}
 
 /* 
 ---------------------------------------------
@@ -2746,6 +2847,9 @@ services
 @media screen and (max-width: 768px) {
   .services {
     padding-bottom: 20px !important;
+  }
+  .padding-top-services {
+    padding-top: 20px;
   }
 }
 
