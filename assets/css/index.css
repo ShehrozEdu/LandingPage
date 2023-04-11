@@ -77,8 +77,8 @@ figcaption {
 .color-2 {
   color: #010d45 !important;
 }
-.color-3 {
-  color: #161c28 !important;
+.color-text {
+  color: #153f5b !important;
 }
 .color-2-bg {
   background-color: #010d45 !important;
@@ -684,36 +684,58 @@ ul {
 .topExecutiveContainer {
   display: none;
 }
-@media screen and (max-width: 767px) {
+/* Media Queries */
+@media screen and (max-width: 768px) {
   .topExecutive {
-    padding-top: 0.8rem;
-    padding-top: 0px;
-    padding-left: 0px;
-    padding-right: 0px;
+    padding-bottom: 3rem;
+    padding-top: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
+
+  .topExecutive h2 {
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+  }
+
+  .executiveContainer {
+    padding: 0 0.5rem;
+  }
+
   .executiveContainer img {
-    width: 5rem;
-    height: 5rem;
+    width: 8rem;
+    height: 6rem;
   }
+
   .brand-img-low {
-    width: 3rem !important;
-    height: 3rem;
-  }
-  .topExecutive {
-    padding-bottom: 0;
+    width: 4rem !important;
   }
 }
-@media screen and (min-width: 320px) and (max-width: 767px) {
-  .executiveContainer img {
-    width: 4rem;
-    height: 4rem;
+
+@media screen and (max-width: 480px) {
+  .topExecutive {
+    padding-bottom: 2rem;
+    padding-top: 0.5rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
   }
+
+  .topExecutive h2 {
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .executiveContainer {
+    padding: 0 0.25rem;
+  }
+
+  .executiveContainer img {
+    width: 6rem;
+    height: 4.5rem;
+  }
+
   .brand-img-low {
     width: 3rem !important;
-    height: 3rem;
-  }
-  .topExecutive {
-    padding-bottom: 0;
   }
 }
 /* 
@@ -2662,9 +2684,6 @@ banner
 #bg-video::-webkit-media-controls {
   display: none !important;
 }
-.customMarginSVGHeader {
-  margin-left: 10rem;
-}
 
 .main-banner .caption {
   /* position: absolute; */
@@ -2672,7 +2691,12 @@ banner
   /* left: 10%; */
   /* transform: translateY(-45%); */
 }
-
+.customMarginSVGHeader {
+  margin-left: 5rem !important;
+}
+.customMarginSVGHeader1 {
+  margin-left: 1rem !important;
+}
 .main-banner .caption h6 {
   margin-top: 0px;
   font-size: 15px;
@@ -3044,7 +3068,11 @@ section.apply-now {
   padding: 0px 100px;
   padding-bottom: 120px;
 }
-
+.manual-font-companies {
+  font-size: 2rem !important;
+  font-weight: bolder !important;
+  line-height: 60px !important;
+}
 .section.apply-now .item {
   padding-left: 60px;
   padding-right: 60px;
@@ -3083,11 +3111,12 @@ section.apply-now {
   object-fit: cover;
 }
 .heading-p-color > p {
-  color: #000 !important;
+  color: #153f5b !important;
 }
 .bullet-points li {
   list-style: circle !important;
   font-size: 1rem;
+  color: #153f5b !important;
 }
 section.apply-now .item h3 {
   color: #fff;
@@ -3174,18 +3203,31 @@ our facts
   color: #1d2025;
   position: relative;
   margin: 0;
-  font-size: 24px;
+  font-size: 2.25rem !important;
 }
-@media (min-width: 768px) {
+.count-sizing-text {
+  font-size: 0.9rem !important;
+  font-weight: 600 !important;
+  /* letter-spacing: 0.5px !important; */
+  /* letter-spacing: 0.5px !important; */
+}
+@media (max-width: 768px) {
   .section-title h2 {
-    font-size: 28px;
+    font-size: 1.75rem !important;
+  }
+  .count-sizing-text {
+    font-size: 0.7rem !important;
   }
 }
-@media (min-width: 992px) {
+@media screen and (max-width: 480px) {
   .section-title h2 {
-    font-size: 34px;
+    font-size: 1.5rem !important;
+  }
+  .count-sizing-text {
+    font-size: 0.6rem !important;
   }
 }
+
 .section-title.title-ex1 h2 {
   padding-bottom: 20px;
 }
@@ -3346,19 +3388,7 @@ ul li {
     margin-bottom: 1rem;
   }
 }
-@media screen and (max-width: 1200px) {
-  .price-card h2 {
-    font-size: 20px !important;
-    font-weight: 600;
-  }
-  .salaryToolImg {
-    width: 9rem;
-    height: 9rem;
-  }
-  .salarycompareText h3 {
-    font-size: 15px !important;
-  }
-}
+
 /* ?????????????????????????????????????TESTING CSS????????????????????????????????????????? */
 section.our-facts {
   /* background-image: url(../images/bg-facts.png); */
@@ -3386,7 +3416,7 @@ section.our-facts h5 {
   font-size: 26px;
 }
 section.our-facts h2 {
-  font-size: 38px;
+  font-size: 1.5rem;
   color: #fff;
   line-height: 50px;
   font-weight: 700;
@@ -3419,12 +3449,12 @@ section.our-facts h2 {
   font-size: 36px;
 }
 
-.count-title {
+/* .count-title {
   font-size: 18px;
   font-weight: 500;
   color: #fff;
   letter-spacing: 0.5px;
-}
+} */
 
 .new-students {
   margin-top: 45px;
