@@ -726,7 +726,7 @@ ul {
   }
 
   .executiveContainer {
-    padding: 0 0.25rem;
+    padding: 0 2.25rem;
   }
 
   .executiveContainer img {
@@ -1176,6 +1176,9 @@ TOP COMPANIES WE HAVE WORKED WITH
 BLOGS
 --------------------------------------------- 
 */
+.manual-padding-events {
+  padding-top: 6rem;
+}
 .eventsCard {
   background: #fff;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);

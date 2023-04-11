@@ -377,24 +377,18 @@
     }
   });
 })(window.jQuery);
-// Target the typewriter element
-const typewriterElement = document.getElementById("typewriter");
+let title = document.querySelector(".typewriter");
+let name = "Real People";
+let index = 1;
 
-// Create a typewriter instance
-const typewriter = new Typewriter(typewriterElement, {
-  delay: 100, // Delay between each character (in milliseconds)
-  deleteSpeed: 50, // Speed of deleting characters (in milliseconds)
-  loop: true, // Whether to loop the typewriter effect
-});
+const typeWriter = () => {
+  let new_title = name.slice(0, index);
+  title.innerText = new_title;
 
-// Add strings to be typed
-typewriter
-  .typeString("Hello,")
-  .pauseFor(1000) // Pause for 1 second
-  .deleteAll()
-  .typeString("World!")
-  .pauseFor(1000) // Pause for 1 second
-  .deleteAll()
-  .typeString("Typewriter Effect")
-  .pauseFor(1000) // Pause for 1 second
-  .start(); // Start the typewriter effect
+  index > name.length ? (index = 1) : index++;
+  // index++;
+
+  setTimeout(() => typeWriter(), 300);
+};
+
+typeWriter();
