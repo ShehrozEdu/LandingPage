@@ -2774,10 +2774,10 @@ services
   /* box-shadow: 0px 0px 20px rgba(220, 227, 255, 0.72); */
   /* background-color: #80e9e0; */
   /* background-image: linear-gradient(62deg, #010d45 0%, #010b10 50%); */
-  background-repeat: no-repeat;
+  /* background-repeat: no-repeat;
   background-size: cover;
-  background-position: center center;
-  border-radius: 20px;
+  background-position: center center; */
+  /* border-radius: 20px; */
   text-align: center;
   /* box-shadow: 0 2px 28px 0 rgb(55, 56, 73);   */
 
@@ -2785,8 +2785,17 @@ services
 }
 
 .services .item .icon {
-  max-width: 60px;
+  width: 40px;
+  height: 40px;
   margin: 0 auto;
+  /* background-color: #001473; */
+  border-radius: 50%;
+}
+.services .item .icon-small {
+  width: 20px !important;
+  height: 20px !important;
+  margin: 0 auto;
+  margin-bottom: 2rem !important;
 }
 
 .services .item h4 {
@@ -3543,6 +3552,42 @@ Community
 /* 
 ---------------------------------------------
 community end
+--------------------------------------------- 
+*/
+/* 
+---------------------------------------------
+MAP
+--------------------------------------------- 
+*/
+/* Container for the section */
+.section-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Map container */
+.map-container {
+  flex: 0 0 100%; /* Take up full width on small screens */
+  max-width: 300px; /* Limit width on larger screens */
+  margin-right: 1rem; /* Add margin to create space between map and address */
+  margin-bottom: 1rem; /* Add margin to create space between map and address */
+}
+
+/* The map */
+.map-container iframe {
+  width: 100%;
+  height: 100%;
+}
+
+/* Address container */
+.address-container {
+  flex: 1; /* Take up remaining width on small screens */
+  max-width: 400px; /* Limit width on larger screens */
+  font-size: 1rem;
+}
+/* 
+---------------------------------------------
+MAP ENDS
 --------------------------------------------- 
 */
 
