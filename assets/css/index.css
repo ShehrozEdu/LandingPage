@@ -3560,30 +3560,33 @@ MAP
 --------------------------------------------- 
 */
 /* Container for the section */
-.section-container {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-/* Map container */
 .map-container {
-  flex: 0 0 100%; /* Take up full width on small screens */
-  max-width: 300px; /* Limit width on larger screens */
-  margin-right: 1rem; /* Add margin to create space between map and address */
-  margin-bottom: 1rem; /* Add margin to create space between map and address */
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio (56.25% = 9/16 * 100%) */
 }
 
 /* The map */
 .map-container iframe {
-  width: 100%;
-  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 50%;
 }
 
 /* Address container */
 .address-container {
-  flex: 1; /* Take up remaining width on small screens */
-  max-width: 400px; /* Limit width on larger screens */
+  margin-top: 1rem;
   font-size: 1rem;
+}
+
+/* Responsive layout */
+@media screen and (max-width: 768px) {
+  .map-container {
+    height: 200px; /* Set a fixed height for the map container on smaller screens */
+  }
 }
 /* 
 ---------------------------------------------
