@@ -7,11 +7,8 @@
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
     <meta name="description" content="" />
-    <meta name="author" content="TemplateMo" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
+    <meta name="author" content="GeniusMesh" />
+
     <link rel="stylesheet" href="assets/css/index.css" />
     <link
       rel="stylesheet"
@@ -137,12 +134,17 @@
                     <div
                       class="scroll-to-section main-header-button-div d-flex flex-lg-row flex-column"
                     >
-                      <button class="btn bookDemoBtn mb-3 mb-lg-0 me-lg-3">
-                        <i class="fa fa-phone me-lg-1"></i> Book a call now!
+                      <button
+                        class="btn bookDemoBtn mb-3 mb-lg-0 me-lg-3"
+                        onclick="openlink()"
+                      >
+                        <i class="fa fa-phone me-lg-1"></i>
+
+                        Book a call now!
                       </button>
 
                       <a
-                        href=""
+                        href="#expertNetwork"
                         class="color-2 fw-bold text-decoration-underline mt-3 text-center"
                       >
                         Why to choose GeniusMesh?
@@ -241,7 +243,7 @@
 
     <!-- ========================Top Executives End========================== -->
     <section class="border-section services">
-      <section class="expertNetwork snipcss-kJ6oo">
+      <section class="expertNetwork snipcss-kJ6oo" id="expertNetwork">
         <div class="container">
           <div class="sectionHead color-2">
             <h2 class="text-center fw-bolder text-uppercase">
@@ -352,20 +354,20 @@
                 <ul class="bullet-points">
                   <li class="mt-lg-3">
                     Chief Digital Officer of a $46B company (US, Singapore) in
-                    four days
+                    <strong> four days</strong>
                   </li>
                   <li class="mt-lg-3">
-                    Head of Sales for a $10M company (North America) in twelve
-                    days
+                    Head of Sales for a $10M company (North America) in
+                    <strong>twelve days</strong>
                   </li>
 
                   <li class="mt-lg-3">
-                    EVP Business Transformation for a $16B company (LATM) in two
-                    days
+                    EVP Business Transformation for a $16B company (LATM) in
+                    <strong> two days</strong>
                   </li>
                   <li class="mt-lg-3">
-                    Chief Revenue Officer for a $5B company (Global) in five
-                    days
+                    Chief Revenue Officer for a $5B company (Global) in
+                    <strong>five days</strong>
                   </li>
                   <!-- <li class="mt-lg-3">90% improvement in cultural alignment</li> -->
                 </ul>
@@ -390,22 +392,15 @@
                   Getting access to a talent pool of diverse professionals with
                   experience in more than 50 industries and the mindset of
                   specialized generalists can give PE & VC firms a dramatic
-                  boost to their growth strategies. With the support of highly
-                  skilled executive search professionals and a proprietary
-                  AI-powered platform, PE & VC professionals can count on the
-                  effectiveness and timeliness of GeniusMesh.
+                  boost to their growth strategies. With the support of a highly
+                  skilled executive search team and a proprietary AI-powered
+                  platform, PE & VC professionals can count on the effectiveness
+                  and timeliness of GeniusMesh.
                 </p>
                 <p>
                   Our proprietary technology helps us to achieve our 94%
                   retention rate and will optimize your private equity firm’s
-                  ROI. Developed in association with a GeniusMesh advisor &
-                  Wharton professor with a PhD in Organizational Psychology, our
-                  assessments create fully encompassing candidate and company
-                  profiles to best establish cultural alignment, professional
-                  expertise, and improved retention rates.
-                </p>
-                <p>
-                  Our assessment enables candidates to not only learn their
+                  ROI. Our assessment enables candidates to not only learn their
                   strengths and weaknesses, but learn from their strengths &
                   weaknesses. Each candidate receives detailed steps to help
                   maximize their strengths and improve their weaknesses. Our
@@ -413,10 +408,10 @@
                   shows individuals the best path based on their experience,
                   psychological profile, and cultural alignment.
                 </p>
+
                 <p class="fst-italic fw-bold">
-                  3. Find a candidate who avoids silo solutions to maximize your
-                  firm’s ROI in your private equity executive recruitment
-                  search.
+                  3. Find a candidate who avoids silo solutions to maximize
+                  value creation
                 </p>
                 <p>
                   Especially in the PE world, finding and hiring the right
@@ -473,17 +468,6 @@
                   network, improve their careers, and find new job
                   opportunities.
                 </p>
-                <!-- <p>
-                  This essentially means that if you want to go to a mega fund,
-                  you absolutely need to nail your 30-minute interviews with
-                  these headhunters. There is a very small margin of error.
-                </p>
-                <p>The other key headhunting firms include:</p>
-                <ul class="bullet-points">
-                  <li><a href="#">Dynamic Search Partners</a></li>
-                  <li>CPI</li>
-                  <li>Henkel Search Partners</li>
-                </ul> -->
               </div>
             </div>
           </div>
@@ -1730,8 +1714,9 @@
                     Networking with Peers, fellow EMBAs
                   </h4>
                   <p class="color-2">
-                    Suspendisse tempor mauris a sem elementum bibendum. Praesent
-                    facilisis massa non vestibulum.
+                    We regularly organize EMBA networking events where
+                    executives collaborate to help each other on profesisonal
+                    front
                   </p>
                 </div>
               </div>
@@ -1899,8 +1884,8 @@
 
           <div class="salarycompareText">
             <h3>Want to hire your next PE Executive in &lt;30 days?</h3>
-            <button>
-              <span>Book a call with us!</span>
+            <button onclick="openlink()">
+              <span> Book a call with us!</span>
               <img
                 src="./assets/images/rightArrrow.svg"
                 class="arrowImg"
@@ -2065,6 +2050,11 @@
 
     <script src="assets/js/custom.js"></script>
     <script>
+      //book a call fnctn
+      function openlink() {
+        window.open("https://app.hubspot.com/meetings/neerja", "_blank");
+      }
+
       //according to loftblog tut
       $(".nav li:first").addClass("active");
 
